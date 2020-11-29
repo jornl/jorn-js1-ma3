@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.games {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px#999;
+    margin: 15px;
+}
+
+.game > img {
+    max-width: 200px;
+    max-height: 100px;
+}
+
+/* Example from w3schools.com */
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    animation: spin 2s linear infinite;
+    margin: 75px auto;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
